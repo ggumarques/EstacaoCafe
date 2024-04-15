@@ -1,0 +1,725 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variáveis */
+:root {
+    --cor-primaria-marrom: #733E35;
+    --cor-secundaria-preta: #000000; 
+    --cor-terciaria-branca: #DED6D6;
+    --cor-background:  #edeaea;
+    --cor-fonte-titulos-texto1: #542E28;
+    --cor-fonte-titulos2: #181818;
+    --cor-fonte-texto1: #3A1919;
+    --cor-fonte-hover: rgba(84, 46, 40, 0.49);
+    --cor-fonte-botoes: #F6F6F6;
+    --poppins-font: "Poppins", sans-serif;
+    --Montserrat-font: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-background);
+}
+/*Rodrigo - menu */
+
+.div_fundo{
+    width: 100%;
+    height: 150px;
+    margin: auto;
+}
+
+/*----- DIV -----*/
+
+.div_logo{
+    position: relative;
+    width: 280px;
+    height: 150px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.div1 img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+/*----- NAV -----*/
+
+.nav1{
+    position: relative;
+    width: 52%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    float: left;
+}
+.nav2{
+    position: relative;
+    width: 23.5%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    float: right;
+}
+nav .a_menu{
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-weight:600;
+}
+nav .botoes{
+    margin: 50px 0px 0px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    float: right;
+    width: 5px;
+    height: 50px;
+}
+nav .newsletter{
+    color: white;
+    padding: 10px 28px 45px 25px;
+    margin: 45px 40px 10px 0px;
+    width: 115px;
+    height: 40px;
+    border-radius: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    float: right;
+    font-size: 25px;
+    background-color: rgba(115, 62, 53, 1);
+    font-weight: 645;
+}
+
+
+nav .a_menu:hover{
+    color: rgba(84, 46, 40, 1);
+    transition: all 0.5s;
+    border-bottom: 5px solid rgba(84, 46, 40, 1);
+    border-radius: 1px;
+}
+
+nav .newsletter:hover{
+    color: rgb(151, 83, 72);
+    background-color: rgba(246, 246, 246, 1);
+    transition: 0.7s all;
+}
+
+
+/* Pamela - Primeira parte da landing */
+.conteudo1 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: var(--cor-background);
+}
+
+.texto_container {
+    flex: 1; 
+}
+
+.parte1_titulo {
+    font-family: var(--Montserrat-font);
+    color: var(--cor-primaria-marrom);
+    text-align: left;
+    font-size: 55px;
+    font-weight: 800;
+    padding-left: 50px;
+}
+
+.parte1_subtitulo {
+    font-family: var(--poppins-font);
+    color: var(--cor-primaria-marrom);
+    text-align: left;
+    font-size: 40px;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+#parte1_p {
+    font-family: var(--Montserrat-font);
+    color: var(--cor-fonte-texto1);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 50px;
+}
+.botao1, .botao2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 9px 10px 9px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 30px 10px 0px 45px; 
+}
+
+.botao1 {
+    background-color: var(--cor-primaria-marrom);
+    border-radius: 15px;
+    border: none;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    padding: 9px 24px 9px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 30px 10px 0px 45px; 
+}
+
+.texto_botao {
+    background-color: var(--cor-primaria-marrom);
+    color: var(--cor-fonte-botoes);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; 
+}
+
+.icone_botao {
+    background-color: var(--cor-primaria-marrom);
+    width: 20px;
+    height: auto;
+}
+
+.botao2 {
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    background-color: transparent;
+    color: var(--cor-primaria-marrom);
+    border: 1.5px solid var(--cor-primaria-marrom);
+    border-radius: 15px;
+    padding: 8px 26px 8px 26px;
+    margin: 10px 20px 0px 0px; 
+}
+
+.botao2:hover {
+    background-color: var(--cor-primaria-marrom);
+    color: var(--cor-fonte-botoes);
+}
+
+.img_direita {
+    width: 450px;
+    margin-right: 45px;
+}
+
+.img_cafe {
+    width: 100%;
+    height: auto;
+}
+
+/* Gustavo - Segunda parte - Explore nossos produtos */
+#segunda-parte {
+    color: var(--cor-fonte-titulos1);
+    justify-content: center;
+    margin: 60px 0px 30px 0px;
+    width: 100%;
+}
+
+.explore-produtos {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore-produtos h3{
+    text-align: center;
+    font-family: var(--poppins-font);
+    font-size: 35px;
+    color: var(--cor-fonte-texto1);
+}
+
+.explore-produtos p{
+    text-align: center;
+    font-family: var(--Montserrat-font);
+    font-size: 25px;
+    color: var(--cor-secundaria-preta);
+    position: relative;
+    
+}
+
+#exclusivo{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 16px;
+    background-color: var(--cor-background);
+    font-family: var(Montserrat);
+}
+
+.card{
+    background-color: #f5e8e8;
+    width: 220px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #000000;
+    flex-wrap: wrap;
+    background-color: transparent;
+    margin: 20px;
+}
+
+.card img{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 260px;
+    min-width: 20px;
+    border-top-left-radius: 12px ;
+    border-top-right-radius: 12px ;
+    background-color: transparent;
+}
+
+
+.card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 30%;
+    margin: 2px;
+    background-color: transparent;
+}
+
+.card p{
+    margin-top: 100px;
+    font-size: 12px;
+    color: #000
+}
+
+.card h1{
+    font-size: 21px;
+    margin-top: 10px;
+    
+}
+
+.card span{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.card button{
+    margin-right: 20%;
+    margin-top: 40%;
+    height: 30px;
+    border: none;
+    padding: 1px;
+    width: 80%;
+    color: #542e28;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--poppins-font);
+    background-color: var(--cor-background);
+}
+
+.card button:hover {
+    color: var(--cor-fonte-botoes);
+    cursor: pointer;
+}
+
+/*Luane - 3º parte */
+.luane12{
+    margin: 75px;
+    height: 290px;
+    background-color: #DED6D6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 25px;
+    padding-left: 3%;
+}
+
+.luane12 h2{
+    font-family: var(--poppins-font);
+    color: var(--cor-fonte-titulos-texto1);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+#localizacao{
+    display: flex;
+    width: 50%;
+    margin-left: 30px;
+    padding: 12px;
+    text-decoration: none;
+    color: #EDEAEA;
+    background-color: #733E35;
+    padding-right: 30px;
+    border-radius: 12px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--poppins-font);
+}
+
+#localizacao:hover{
+    color:white;
+    background-color:#733e35d1;
+    transition: 0.3s all;
+}
+
+.coffeimg {
+    position: relative;
+    width: 80%;
+    z-index: +2;
+    float: right;
+    left: 25%;
+}
+
+/*Gustavo - quarta parte*/
+#selo {
+    font-family: var(--poppins-font);
+    color: var(--cor-primaria-marrom);
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+.quarta-parte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.selos {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.selos section {
+    width: 45%;
+}
+
+.selos img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.selos h2 {
+    font-family: var(--poppins-font);
+    color: var(--cor-primaria-marrom);
+    font-size: 1.5rem; 
+}
+
+
+.selos p {
+    font-family: var(--poppins-font);
+    font-size: 1rem;
+}
+
+.news img{
+    width: 87%;
+    margin: 100px 100px 120px;
+    margin-bottom: -100px;
+}
+/*Pamela - Contato*/
+.img_contatocoffee {
+    width: 100%;
+    overflow: hidden;
+}
+.container_image {
+    width: 100%;  
+    overflow: hidden;
+}
+
+.contato_h1 {
+    font-size: 2.0rem;
+    font-family: var(--poppins-font);
+    color: var(--cor-fonte-titulos-texto1);
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.bloco1, .bloco2 {
+    width: 48%; 
+}
+
+.bloco1 {
+    float: right;
+}
+
+.bloco2 {
+    float: left;
+}
+
+.contato_p1, .contato_p2 {
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    color: var(--cor-fonte-texto1);
+    margin-bottom: 20px;
+}
+
+.contato_p1 {
+    text-align: right;
+}
+
+.contato_p2 {
+    text-align: left;
+}
+
+.contato_botao1, .contato_botao2 {
+    background-color: var(--cor-primaria-marrom);
+    border-radius: 15px;
+    border: none;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    padding: 11px 24px 11px 20px;
+    transition: background-color 0.3s, color 0.5s;
+    color: var(--cor-fonte-botoes);
+    cursor: pointer;
+    margin: 10px 0px 15px 0px;
+}
+
+.contato_botao1 {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.contato_botao2 {
+    background-color: transparent;
+    color: var(--cor-primaria-marrom);
+    border: 1.5px solid var(--cor-primaria-marrom);
+}
+.contato_botao2:hover {
+    background-color: var(--cor-primaria-marrom);
+    color: var(--cor-fonte-botoes);
+}
+
+/* ----- RODRIGO CARDAPIO ----- */
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fontes/Poppins-Regular.ttf);
+}
+
+.cardapio_img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+.secao_cardapio{
+    position: relative;
+    width: 100%;
+    height: 2710px;
+    background-color: rgba(237, 234, 234, 1);
+    margin: auto;
+}
+
+/* ----- Titulo ----- */
+.cardapio_h{
+    font-size: 2.9rem;
+    font-family: var(--poppins-font);
+    color: rgba(84, 46, 40, 1);
+    text-align: center;
+    margin: auto;
+    font-weight:600;
+}
+
+.titulo_cardapio{
+    position: relative;
+    width: 72%;
+    height: 110px;
+    margin: auto;
+}
+
+.categoria{
+    font-size: 2.6rem;
+    font-family: var(--poppins-font);
+    color: rgba(84, 46, 40, 1);
+    font-weight: 550;
+    text-align: center;
+    margin: auto;
+}
+
+.titulo_cardapio p{
+    font-size: 22px;
+    font-family: var(--Montserrat-font);
+    text-align: center;
+    font-weight: 400;
+    margin: auto;
+}
+
+/* ----- Nav ----- */
+
+.nav_cardapio{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.nav_cardapio a{
+    font-size: 24px;
+    font-family: var(--poppins-font);
+    font-weight: 600;
+    color: rgba(84, 46, 40, 0.49);
+    text-decoration: none;
+}
+.nav_cardapio a:hover{
+    color: rgba(84, 46, 40, 1);
+    transition: all 0.5s;
+    border-bottom: 6px solid rgba(84, 46, 40, 1);
+    border-radius: 5px;
+}
+
+/* ----- Divs ----- */
+
+.div_cardapio{
+    position: relative;
+    width: 100%;
+    height: 390px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div_produtos{
+    position: relative;
+    width: 29%;
+    height: 102%;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+}
+.div_produtos_img{
+    width: 240px;
+    height: 210px;
+    margin: 5px 75px;
+}
+.div_produtos_img2{
+    width: 240px;
+    height: 210px;
+    margin: 15px 40px 0px 40px;
+}
+.div_produtos p{
+    position: relative;
+    font-size: 20px;
+    color: rgb(121, 97, 97);
+    text-align: left;
+    margin: 0px 20px;
+}
+.div_produtos h1{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin: 0px 20px;
+}
+.div_produtos h2{
+    font-size: 28px;
+    font-family: Poppins;
+    color: rgba(84, 46, 40, 1);
+    text-align: center;
+    margin: auto;
+}
+
+.div_produtos:hover{
+    background-color:rgba(244, 242, 242, 1);
+}
+
+/*Footer - Pamela*/
+footer {
+    background-color: #261E1B;
+    width: 100%;
+    padding: 20px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 25px 25px 0px 0px;
+    margin-top: 260px;
+    position: relative; /* Adicionando posicionamento relativo */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+footer * {
+    background-color: transparent;
+}
+
+footer h3 {
+    font-family: var(--Montserrat-font);
+    font-size: 20px;
+    color: var(--cor-fonte-botoes);
+    margin-left: 10px;
+}
+
+footer p {
+    font-family: var(--Montserrat-font);
+    font-weight: 400;
+    color: var(--cor-terciaria-branca);
+    padding: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    font-family: var(--Montserrat-font);
+    font-weight: 300;
+    color: var(--cor-terciaria-branca);
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+}
+
+footer p a {
+    display: inline-block; 
+    margin: -0.9px;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+}
+
+.icones_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy_footer {
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 30px;
+    background-color: #6D5854;
+    width: 100%; 
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    height: 60px;
+}
